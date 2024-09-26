@@ -71,9 +71,25 @@ func evaluate(speedLimit: Int, recordedSpeedOfCar: Int) -> String {
 }
 
 // Quick tests
-print(evaluate(speedLimit: 80, recordedSpeedOfCar: 79))  // Under
-print(evaluate(speedLimit: 80, recordedSpeedOfCar: 81))  // $100 fine, lower threshold
-print(evaluate(speedLimit: 80, recordedSpeedOfCar: 100)) // $100 fine, upper threshold
-print(evaluate(speedLimit: 80, recordedSpeedOfCar: 101)) // $270 fine, lower threshold
-print(evaluate(speedLimit: 80, recordedSpeedOfCar: 110)) // $270 fine, upper threshold
-print(evaluate(speedLimit: 80, recordedSpeedOfCar: 111)) // $500 fine, lower threshold
+//print(evaluate(speedLimit: 80, recordedSpeedOfCar: 79))  // Under
+//print(evaluate(speedLimit: 80, recordedSpeedOfCar: 81))  // $100 fine, lower threshold
+//print(evaluate(speedLimit: 80, recordedSpeedOfCar: 100)) // $100 fine, upper threshold
+//print(evaluate(speedLimit: 80, recordedSpeedOfCar: 101)) // $270 fine, lower threshold
+//print(evaluate(speedLimit: 80, recordedSpeedOfCar: 110)) // $270 fine, upper threshold
+//print(evaluate(speedLimit: 80, recordedSpeedOfCar: 111)) // $500 fine, lower threshold
+
+// INTERACTIVE VERSION
+
+// 1. Input
+let inputLimit = getInput(withPrompt: "Enter the speed limit:", minimum: 0, maximum: nil)
+
+let inputRecordedSpeed = getInput(withPrompt: "Enter the recorded speed of the car:", minimum: 0, maximum: nil)
+
+// 2. Process
+let result = evaluate(
+    speedLimit: inputLimit,
+    recordedSpeedOfCar: inputRecordedSpeed
+)
+
+// 3. Output
+print(result)
