@@ -68,6 +68,17 @@ func evaluate(speedLimit: Int, recordedSpeedOfCar: Int) -> String {
         return "Congratulations, you are within the speed limit!"
     }
     
+    // Alternative syntax, using if statements instead of switch
+//    if amountOverLimit >= 1 && amountOverLimit <= 20 {
+//        return "You are speeding and your fine is $100"
+//    } else if amountOverLimit >= 21 && amountOverLimit <= 30 {
+//        return "You are speeding and your fine is $270"
+//    } else if amountOverLimit > 30 {
+//        return "You are speeding and your fine is $500"
+//    } else {
+//        return "Congratulations, you are within the speed limit!"
+//    }
+    
 }
 
 // Quick tests
