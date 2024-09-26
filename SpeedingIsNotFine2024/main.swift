@@ -73,7 +73,7 @@ func evaluate(speedLimit: Int, recordedSpeedOfCar: Int) -> String {
 // Quick tests
 print(evaluate(speedLimit: 80, recordedSpeedOfCar: 79))  // Under
 print(evaluate(speedLimit: 80, recordedSpeedOfCar: 81))  // $100 fine, lower threshold
-print(evaluate(speedLimit: 80, recordedSpeedOfCar: 100))  // $100 fine, upper threshold
+print(evaluate(speedLimit: 80, recordedSpeedOfCar: 100)) // $100 fine, upper threshold
 print(evaluate(speedLimit: 80, recordedSpeedOfCar: 101)) // $270 fine, lower threshold
 print(evaluate(speedLimit: 80, recordedSpeedOfCar: 110)) // $270 fine, upper threshold
 print(evaluate(speedLimit: 80, recordedSpeedOfCar: 111)) // $500 fine, lower threshold
