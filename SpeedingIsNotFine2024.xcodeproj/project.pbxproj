@@ -20,18 +20,44 @@
 
 /* Begin PBXFileReference section */
 		818B13C42CA5B92B00AC04F8 /* SpeedingIsNotFine2024 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpeedingIsNotFine2024; sourceTree = BUILT_PRODUCTS_DIR; };
+		818B13D22CA5BC6300AC04F8 /* SpeedingIsNotFineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedingIsNotFineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		818B13DA2CA5BCC400AC04F8 /* Exceptions for "SpeedingIsNotFine2024" folder in "SpeedingIsNotFineTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.swift,
+			);
+			target = 818B13D12CA5BC6300AC04F8 /* SpeedingIsNotFineTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		818B13C62CA5B92B00AC04F8 /* SpeedingIsNotFine2024 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				818B13DA2CA5BCC400AC04F8 /* Exceptions for "SpeedingIsNotFine2024" folder in "SpeedingIsNotFineTests" target */,
+			);
 			path = SpeedingIsNotFine2024;
+			sourceTree = "<group>";
+		};
+		818B13D32CA5BC6300AC04F8 /* SpeedingIsNotFineTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpeedingIsNotFineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		818B13C12CA5B92B00AC04F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818B13CF2CA5BC6300AC04F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				818B13C62CA5B92B00AC04F8 /* SpeedingIsNotFine2024 */,
+				818B13D32CA5BC6300AC04F8 /* SpeedingIsNotFineTests */,
 				818B13C52CA5B92B00AC04F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				818B13C42CA5B92B00AC04F8 /* SpeedingIsNotFine2024 */,
+				818B13D22CA5BC6300AC04F8 /* SpeedingIsNotFineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +110,28 @@
 			productReference = 818B13C42CA5B92B00AC04F8 /* SpeedingIsNotFine2024 */;
 			productType = "com.apple.product-type.tool";
 		};
+		818B13D12CA5BC6300AC04F8 /* SpeedingIsNotFineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818B13D62CA5BC6300AC04F8 /* Build configuration list for PBXNativeTarget "SpeedingIsNotFineTests" */;
+			buildPhases = (
+				818B13CE2CA5BC6300AC04F8 /* Sources */,
+				818B13CF2CA5BC6300AC04F8 /* Frameworks */,
+				818B13D02CA5BC6300AC04F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				818B13D32CA5BC6300AC04F8 /* SpeedingIsNotFineTests */,
+			);
+			name = SpeedingIsNotFineTests;
+			packageProductDependencies = (
+			);
+			productName = SpeedingIsNotFineTests;
+			productReference = 818B13D22CA5BC6300AC04F8 /* SpeedingIsNotFineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +143,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					818B13C32CA5B92B00AC04F8 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					818B13D12CA5BC6300AC04F8 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -112,12 +165,30 @@
 			projectRoot = "";
 			targets = (
 				818B13C32CA5B92B00AC04F8 /* SpeedingIsNotFine2024 */,
+				818B13D12CA5BC6300AC04F8 /* SpeedingIsNotFineTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		818B13D02CA5BC6300AC04F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		818B13C02CA5B92B00AC04F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818B13CE2CA5BC6300AC04F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +334,34 @@
 			};
 			name = Release;
 		};
+		818B13D72CA5BC6300AC04F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.SpeedingIsNotFineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		818B13D82CA5BC6300AC04F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.SpeedingIsNotFineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +379,15 @@
 			buildConfigurations = (
 				818B13CC2CA5B92B00AC04F8 /* Debug */,
 				818B13CD2CA5B92B00AC04F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		818B13D62CA5BC6300AC04F8 /* Build configuration list for PBXNativeTarget "SpeedingIsNotFineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818B13D72CA5BC6300AC04F8 /* Debug */,
+				818B13D82CA5BC6300AC04F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
